@@ -1,0 +1,5 @@
+Olá {{ name }}!
+Seguem seus dados:
+cpf: {{ cpf }}
+email: {{ email }}
+phone: {{ phone }}
