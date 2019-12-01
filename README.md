@@ -24,8 +24,8 @@ python manage.py test
 
 ## Como fazer o deploy
 
-1. Crie umainstância no heroku
-2. Envie as configurações parapo heroku
+1. Crie uma instância no heroku
+2. Envie as configurações para o heroku
 3. Defina uma SECRET_KEY segura para a instância
 4. Defina DEBUG=False
 5. Configure o serviço de email
@@ -36,6 +36,6 @@ heroku create minhainstancia
 heroku config:push
 heroku config:set SECRET_KEY=`python contrib/secret_gen.py`
 heroku config:set DEBUG=False
-# configuro o email
+# configure o email
 git push heroku master --force
 ```
