@@ -1,0 +1,19 @@
+SECRET_KEY=INSIRA_AQUI_SUA_SECRET_KEY
+DEBUG=True
+ALLOWED_HOSTS=127.0.0.1, .localhost, .herokuap.com, eventex.com
+
+## Envia email para console do runserver
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+EMAIL_HOST=localhost
+EMAIL_PORT=25
+EMAIL_USE_TLS=False
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+
+## Envia email pelo Sendgrid
+#EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+#EMAIL_HOST=smtp.sendgrid.com
+#EMAIL_PORT=587
+#EMAIL_USE_TLS=True
+#EMAIL_HOST_USER=app152393274@heroku.com
+#EMAIL_HOST_PASSWORD=y8zftk3i6147
