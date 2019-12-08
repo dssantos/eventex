@@ -3,8 +3,7 @@
 Sistema de Eventos
 
 [![Build Status](https://travis-ci.org/dssantos/eventex.svg?branch=master)](https://travis-ci.org/dssantos/eventex)
-[![Maintainability](https://api.codeclimate.com/v1/badges/1361009832501712d3f5/maintainability)](https://codeclimate.com/github/dssantos/eventex/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1361009832501712d3f5/test_coverage)](https://codeclimate.com/github/dssantos/eventex/test_coverage)
+[![Coverage Status](https://coveralls.io/repos/github/dssantos/eventex/badge.svg?branch=master)](https://coveralls.io/github/dssantos/eventex?branch=master)
 
 
 ## Como desenvolver
