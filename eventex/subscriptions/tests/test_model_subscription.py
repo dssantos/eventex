@@ -1,6 +1,8 @@
 from datetime import datetime
 
 from django.test import TestCase
+from django.utils.timezone import now
+
 from eventex.subscriptions.models import Subscription
 
 
@@ -23,3 +25,6 @@ class SubscriptionModelTest(TestCase):
 
     def test_str(self):
         self.assertEqual('Danilo Santos', str(self.obj))
+
+    def test_subs_today(self):
+        self.assertEqual(self.obj.created_at.date(), now().date())
