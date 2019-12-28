@@ -1,5 +1,5 @@
-Olá {{ name }}!
+Olá {{ subscription.name }}!
 Seguem seus dados:
-cpf: {{ cpf }}
-email: {{ email }}
-phone: {{ phone }}
+cpf: {{ subscription.cpf }}
+email: {{ subscription.email }}
+phone: {{ subscription.phone }}
