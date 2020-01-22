@@ -28,3 +28,7 @@ class SubscriptionModelTest(TestCase):
 
     def test_subs_today(self):
         self.assertEqual(self.obj.created_at.date(), now().date())
+
+    def test_today_default_to_False(self):
+        """By default paid must be False"""
+        self.assertEqual(False, self.obj.paid)
