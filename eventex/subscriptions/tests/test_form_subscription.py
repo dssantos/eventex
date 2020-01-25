@@ -26,10 +26,10 @@ class SubscriptionFormTest(TestCase):
         self.assertEqual('Danilo Santos', form.cleaned_data['name'])
 
     def assertFormErrorCode(self, form, field, code):
-        errors = form.errors.get_json_data()
+        errors = form.errors.as_data()
         errors_list = errors[field]
         exception = errors_list[0]
-        self.assertEqual(code, exception['code'])
+        self.assertEqual(code, exception.code)
 
     def assertFormErrorMessage(self, form, field, msg):
         errors = form.errors
