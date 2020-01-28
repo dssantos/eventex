@@ -44,7 +44,7 @@ class SubscriptionFormTest(TestCase):
         errors = form.errors.as_data()
         errors_list = errors[field]
         exception = errors_list[0]
-        self.assertEqual(code, exception.code )
+        self.assertEqual(code, exception.code)
 
     def assertFormErrorMessage(self, form, field, msg):
         errors = form.errors
